@@ -4,14 +4,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body{
+  background-color:white;
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background-color: #ffffff;
   padding: 15px 40px;
-  color: rgb(26, 132, 189);
+  color: white;
 }
 .nav-links a {
   color: #11223d;   
@@ -51,7 +54,7 @@
 }
 
 .navbar ul li a {
-  color: white;
+  color: rgb(6, 50, 88);
   text-decoration: none;
   font-weight: 500;
 }
