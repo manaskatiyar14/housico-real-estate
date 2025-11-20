@@ -12,9 +12,9 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:rgb(6, 20, 65);
+  background:rgb(255, 255, 255);
   padding: 15px 40px;
-  color: white;
+  color: rgb(22, 185, 207);
 }
 .nav-links a {
   color: #11223d;   
@@ -439,5 +439,192 @@ footer {
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  color: #aaa;
+  color: #aaaaaa;
 }
+
+
+
+
+
+
+.compare-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: #fafafa;
+  gap: 40px;
+}
+
+.compare-left {
+  flex: 1.1;
+}
+
+.compare-left h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+
+
+.steps {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.address-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.address-box input {
+  width: 330px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  font-size: 15px;
+}
+
+.start-btn {
+  padding: 15px 28px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background: #1080db;
+}
+
+.compare-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.compare-right img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+}
+.headline {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #0a2540, #1d72b8, #3ca4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.agents-section {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.agents-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.agents-subtitle {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.agents-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.agent-card {
+  text-align: center;
+  width: 200px;
+}
+
+.agent-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.agent-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.agency {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.agent-card p {
+  font-size: 15px;
+  color: #333;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .agents-container {
+    gap: 30px;
+  }
+
+  .agent-card {
+    width: 160px;
+  }
+
+  .agents-title {
+    font-size: 30px;
+  }
+}
+
+
+
+

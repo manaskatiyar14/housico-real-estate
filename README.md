@@ -10,10 +10,9 @@ It allows users to search, explore, and discover properties for buying or rentin
 ---- Features
 
  -Featured Property Listings with images & videos
--Auto-playing video previews for new listings
--Fully responsive design
--'How We Can Help” assistant section
--Social media connectivity in the footer
+-Auto-playing video previews for new listings => done
+-Fully responsive design =>  done
+-Social media connectivity in the footer =>done
 -Clean, modern, user-friendly UI
 
 
