@@ -45,12 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   themeToggle.addEventListener('click', function() {
     body.classList.toggle('dark-mode');
-
-    // Change button icon
     if (body.classList.contains('dark-mode')) {
-      themeToggle.textContent = '☀️'; // Sun icon for light mode
-    } else {
-      themeToggle.textContent = '🌙'; // Moon icon for dark mode
+      themeToggle.textContent = '☀️'; 
+      themeToggle.textContent = '🌙'; 
     }
   });
 });
@@ -60,14 +57,12 @@ const signupBtn = document.getElementById('signup-btn');
 const loginModal = document.getElementById('login-modal');
 const closeLogin = document.getElementById('close-login');
 
-// Open modal
 loginBtn.addEventListener('click', () => loginModal.style.display = 'block');
-signupBtn.addEventListener('click', () => loginModal.style.display = 'block'); // can use same modal
+signupBtn.addEventListener('click', () => loginModal.style.display = 'block'); 
 
-// Close modal
 closeLogin.addEventListener('click', () => loginModal.style.display = 'none');
 
-// Close if click outside content
+
 window.addEventListener('click', (e) => {
   if (e.target === loginModal) loginModal.style.display = 'none';
 });
