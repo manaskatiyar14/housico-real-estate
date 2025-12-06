@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Housico | Find Your Dream Home</title>
   <link rel="stylesheet" href="style.css" />
@@ -20,8 +20,13 @@
         <li><a href="sell.html">Sell</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <button id="theme-toggle">🌙</button>
+        <button id="login-btn">Login</button>
+        <button id="signup-btn">Sign Up</button>
+        
       </ul>
     </nav>
+    
   </header>
 
  
@@ -29,16 +34,13 @@
     <div class="hero-content">
       <h1>Smarter Way to Find Your Next Home</h1>
       <p>Search. Explore. Move in — all with Housico.</p>
-       <div class="search-box">
-        <input type="search" placeholder="Search for city, locality or property..." id="search-bar" />
-        <img src="./images/searchicon/searchicon.jpg" alt="Search" class="search-icon" />
-        </div>
-
-
+       <div class="search-container">
+    <input type="search" id="search-bar" placeholder="Search for city, locality or property..." />
+    <img src="./images/searchicon/searchicon.jpg" alt="Search" class="search-icon" />
+    <div id="suggestions"></div>
+</div>
     </div>
   </section>
-
-
   <section class="featured">
     <h2>Featured Properties</h2>
     <div class="property-container">
@@ -48,7 +50,7 @@
         <p>₹85 Lakhs | Sea View</p>
       </div>
       <div class="property-card">
-        <img src=".//images/property/2bhk.jpeg" alt="House 2">
+        <img src="./images/property/2bhk.jpeg" alt="House 2">
         <h3>3BHK Villa - Delhi</h3>
         <p>₹1.2 Crore | Spacious Garden</p>
       </div>
@@ -59,15 +61,13 @@
       </div>
     </div>
   </section>
-
-
 <section class="help-area">
   <h2>Discover how we can help</h2>
 
   <div class="help-tabs">
-      <button class="tab active">Buying</button>
-      <button class="tab">Renting</button>
-      <button class="tab">Selling</button>
+      <button class="tab active" type="button">Buying</button>
+      <button class="tab" type="button">Renting</button>
+      <button class="tab" type="button">Selling</button>
   </div>
 
   <div class="help-cards">
@@ -117,7 +117,40 @@
 
   <p class="footer-bottom">© 2025 Housico. All rights reserved.</p>
 </footer>
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-login">&times;</span>
+    <h2>Log in or create an account</h2>
 
+
+    <label for="email">Email address <span style="font-weight:normal;">required</span></label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button id="continue-btn">Continue</button>
+
+    <div class="divider"><span>or</span></div>
+
+    <button class="social-btn google"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" /> Continue with Google</button>
+    <button class="social-btn facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" /> Continue with Facebook</button>
+    <button class="social-btn apple"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" /> Continue with Apple</button>
+
+    <p class="agent-text">
+      Are you a real estate agent? 
+      <a href="#">Log in</a> or <a href="#">create an account</a> 
+      <a href="#">Purchase products</a>
+    </p>
+
+    <p class="terms">
+      By creating an account you agree to our 
+      <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+    </p>
+  </div>
+</div>
+<button id="login-btn">Login</button>
+<button id="signup-btn">Sign Up</button>
+
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
