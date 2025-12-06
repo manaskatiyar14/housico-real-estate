@@ -19,6 +19,9 @@
         <li><a href="rent.html">Rent</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <button id="theme-toggle">🌙</button>
+        <button id="login-btn">Login</button>
+        <button id="signup-btn">Sign Up</button>
       </ul>
     </nav>
   </header>
@@ -163,6 +166,35 @@
 
   <p class="footer-bottom">© 2025 Housico. All rights reserved.</p>
 </footer>
+            <div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-login">&times;</span>
+    <h2>Log in or create an account</h2>
+
+
+    <label for="email">Email address <span style="font-weight:normal;">required</span></label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button id="continue-btn">Continue</button>
+
+    <div class="divider"><span>or</span></div>
+
+    <button class="social-btn google"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" /> Continue with Google</button>
+    <button class="social-btn facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" /> Continue with Facebook</button>
+    <button class="social-btn apple"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" /> Continue with Apple</button>
+
+    <p class="agent-text">
+      Are you a real estate agent? 
+      <a href="#">Log in</a> or <a href="#">create an account</a> 
+      <a href="#">Purchase products</a>
+    </p>
+
+    <p class="terms">
+      By creating an account you agree to our 
+      <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+    </p>
+  </div>
+</div>
+<script src="script.js"></script>
 
 
 

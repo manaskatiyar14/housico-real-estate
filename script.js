@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     body.classList.toggle('dark-mode');
     if (body.classList.contains('dark-mode')) {
       themeToggle.textContent = '☀️'; 
+    } else {
       themeToggle.textContent = '🌙'; 
     }
   });
